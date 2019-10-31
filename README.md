@@ -12,7 +12,7 @@ Please use this link to reveal part 2 of the test. You can toggle between test 1
 ```
 One way!
 Copy the source to your hard drive
-[Install http-server](https://www.npmjs.com/package/http-server)
+http-server can be found @(https://www.npmjs.com/package/http-server)
 http-server -p 3000 
 
 ```
