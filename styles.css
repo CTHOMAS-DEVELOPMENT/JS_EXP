@@ -1,0 +1,161 @@
+/*********************************/
+/*General-Initialization for page*/
+/*********************************/
+html, body{
+	margin: 0;
+	padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a { text-decoration: none; }
+h2{
+  margin: 1em;
+}
+
+/* Colours */
+.blue { color: blue }
+.grey { color: grey }
+.blue-bk { background: blue }
+.grey-bk { background: grey }
+/*****************************/
+/* The static navigation bar */
+/*****************************/
+.navbar {
+  overflow: hidden;
+  background-color:#fff;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+}
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+}
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+/*******/
+/* menu*/
+/*******/
+.grid-container-menu {
+  display: grid;
+  min-height: 5vh;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 5fr;
+}
+/*********/
+/* banner*/
+/*********/
+.grid-container-banner {
+  display: grid;
+  position: absolute;
+  top: 5vh;
+  width:100vw;
+  min-height: 32vh;
+  grid-template-columns: 3fr 8fr 3fr;
+  grid-template-rows: auto auto;
+  place-items: center;
+  background: #0662B5;
+  text-align: center;
+  color: #fff;
+  z-index: -1;
+  line-height: 120%;
+}
+/******************/
+/* Information bar*/
+/******************/
+.grid-container-info {
+  display: grid;
+  position: absolute;
+  top: 37vh;
+  width:100vw;
+  min-height: 30vh;
+  grid-template-columns: 3fr 2fr 2fr 2fr 2fr 3fr;
+  grid-template-rows: auto auto;
+  place-items: center;
+  background: #EEEEEE;
+  text-align: center;
+  color: #0662B5;
+  z-index: -1;
+  line-height: 120%;
+}
+.grid-container-info > div > span { font-size: 0.5em;color: #000;line-height: 1.25em; }
+.grid-container-info > div > img { margin-top: 3vh;margin-bottom: 2vh; }
+/***********/
+/* Carousel*/
+/***********/
+.grid-container-carousel-header {
+  display: grid;
+  position: absolute;
+  top: 67vh;
+  min-height: 1vh;
+  width: 100vw;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background: #EEEEEE;
+}
+.grid-container-carousel-header > span { color: #0662B5; }
+.grid-container-carousel {
+  display: grid;
+  position: absolute;
+  top: 69vh;
+  min-height: 13vh;
+  width: 100vw;
+  grid-auto-flow: column;
+}
+.grid-container-carousel-control {
+  display: grid;
+  position: absolute;
+  top: 82vh;
+  min-height: 4vh;
+  width: 100vw;
+  grid-template-columns: 6fr 2fr 6fr;
+  grid-template-rows: auto;
+  place-items: center;
+  background: #EEEEEE;
+}
+.slider {
+  display: grid;
+  place-items: center;
+}
+/* Controls */
+ul.choicebuttons {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  cursor:pointer;
+}
+ul.choicebuttons li {display: inline;}
+ul.choicebuttons li a {
+  float: left;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+}
+ul.choicebuttons li a.active{ background-color:black;  color: white; }
+ul.choicebuttons li a.dormant{ background-color:white; color: black; }
+ul.choicebuttons li a:hover:not(.active) {background-color: #ddd;}
+/**********/
+/* Footer */
+/**********/
+.grid-container-footer {
+  display: grid;
+  position: absolute;
+  top: 86vh;
+  min-height: 14vh;
+  width: 100vw;
+  grid-template-columns: 3fr 2fr 2fr 2fr 2fr 3fr;
+  grid-template-rows: 6vh 3vh 3vh 3vh;
+  grid-auto-rows: auto;
+  place-items: center;
+  background: #E5E3E4;
+}
+/*Forces verticle scroll bar to illustrate static menu*/
+.main {
+  min-height: 150vh;
+}
